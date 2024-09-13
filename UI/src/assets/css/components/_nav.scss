@@ -1,0 +1,31 @@
+@mixin nav($height, $width, $min-width, $gap, $justify-content, $align-items, $font-weight, $font-size, $color) {
+  nav {
+    height: $height;
+    ul {
+      width: $width;
+      height: inherit;
+      list-style: none;
+      padding: 0;
+      margin: auto;
+      display: flex;
+      justify-content: $justify-content;
+      align-items: $align-items;
+      gap: $gap;
+      li {
+        display: inline-block;
+        min-width: $min-width;
+        text-align: center;
+        a {
+          font-style: none;
+          font-weight: $font-weight;
+          font-size: $font-size;
+          color: $color;
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

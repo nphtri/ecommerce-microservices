@@ -1,0 +1,36 @@
+@mixin search-box {
+  .search-box {
+    min-width: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .search-text-holder {
+      width: 50px;
+      opacity: 1;
+      transition: 0.3s;
+      transition-delay: 0s;
+    }
+    .searchbox-input {
+      display: inline-block;
+      opacity: 0;
+      width: 0;
+      padding: 0;
+      height: 100%;
+      border: none;
+      border-bottom: 1px solid #7e7d7d;
+      box-shadow: 0px 5px 10px 0px #b3b3b3;
+      transition: 1s;
+      &:focus {
+        outline: none;
+      }
+    }
+    .searchbox-show {
+      width: 200px !important;
+      opacity: 1 !important;
+    }
+    .display-none {
+      opacity: 0 !important;
+      width: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+- Https
+- RabbitMQ
+- grpc
+
+Auth
+- Email, Phone verify
+Product
+- Verify token, artist is exist or not
+
+UI
+- News
+    News post

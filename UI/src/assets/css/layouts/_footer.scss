@@ -1,0 +1,47 @@
+@import '../components/nav';
+footer {
+  width: 100%;
+  margin-top: 5vh;
+  margin-bottom: 100px;
+  #footer-seperate {
+    height: 5vh;
+    width: 60%;
+    margin: auto;
+    border-top: 1px solid #7e7d7d;
+  }
+  #footer-contain {
+    padding-top: 5vh;
+    @include nav(inherit, 100%, 80px, 20px, center, center, normal, 0.8em, black);
+
+    ul {
+      text-transform: uppercase;
+      li {
+        &::after {
+          text-align: center;
+          content: attr(div);
+          margin-left: 20px;
+          border-right: 2px solid #7e7d7d;
+        }
+        &:last-child::after {
+          content: none;
+          border-right: none;
+        }
+      }
+    }
+
+    #contact-span {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.75em;
+      font-weight: bold;
+    }
+  }
+  #footer-logo {
+    margin-top: 50px;
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+}
